@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 3s ease-in-out;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 100px;
+}
+
+.App-link {
+  color: black;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.App-link:hover {
+
+  color:lime;
+  transition: all 2s;
+  font-size: 70px;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.Password-test {
+  width: 100px;
+  height: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.child {
+  color: navy;
+}
+
+.btn {
+  color: lime;
+  background: black;
+  border: 3px solid lime;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px 80px;
+  outline: 0;
+  transition: all 1s;
+  margin-bottom: 30px;
+}
+
+.btn:hover{
+  opacity: .7;
+  background-color: #282c34;
+  
+ }
+
+ .btn-round {
+   border-radius: 50%;
+   font-size: 10px;
+   padding: 15px;
+ }
+
+ .inputNew {
+   border-radius: 10px;
+   padding: 10px;
+   outline: 0;
+   border: 3px solid lime;
+   color: lime;
+   background: black;
+ }
+
+ .flex {
+   display: flex;
+ }
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
