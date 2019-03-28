@@ -1,53 +1,29 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #28BBB2;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 3s ease-in-out;
-  height: 40vmin;
-  pointer-events: none;
-}
-
 
 .App-header {
   background-color: #282c34;
+  height: 100%;
   min-height: 100vh;
+  width: 70vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 20px 10px;
-}
-
-.App-link {
-  color: black;
-  font-size: 60px;
-  cursor: pointer;
-}
-
-.App-link:hover {
-
-  color:lime;
-  transition: all 2s;
-  font-size: 70px;
-  font-weight: bold;
-  opacity: 0;
-}
-
-.Password-test {
-  width: 100px;
-  height: 20px;
-  padding: 20px;
-  border-radius: 20px;
 }
 
 .child {
   color: navy;
 }
 
-.btn {
+/* .btn {
   color: lime;
   background: black;
   border: 3px solid lime;
@@ -64,7 +40,7 @@
   opacity: .7;
   background-color: #282c34;
   
- }
+ } */
 
  .btn-round {
    border-radius: 50%;
@@ -103,6 +79,98 @@
 .bigTitle {
   color: white;
 }
+
+.inputNewClass {
+  padding: 15px;
+  margin: 20px;
+  border: 3px solid black;
+  border-radius: 12px;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  background: #115050;
+  outline: 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: all .5s;
+}
+
+.inputNewClass:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background: #1A7D7D;
+  border: 3px solid black;
+}
+
+.btnNew {
+  background: #28BBB2;
+  border-radius: 12px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: all .5s;
+  outline: 0;
+  border: 3px solid black;
+}
+
+.btnNew:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background: #1A7D7D;
+  cursor: pointer;
+  
+  }
+
+.btnRound {
+  border-radius: 50%;
+}
+
+.flexRow {
+  display: flex;
+  justify-content: center;
+} 
+
+
+.formNew {
+   background: #115050;
+   /* padding: 10px 0px; */
+   height: 100%;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 60vw;
+}
+
+.margBot {
+  margin-bottom: 30px;
+}
+
+.inputBord {
+  border-radius: 7px;
+  padding: 5px;
+  outline: 0;
+}
+
+.inputBord.green {
+    border: 2px solid green;
+}
+
+.inputBord.red {
+    border: 2px solid red;
+}
+
+
+
+input::-webkit-input-placeholder { color: #1A7D7D; }
+input::-webkit-input-placeholder { font-size: 16px; }
+input::-webkit-input-placeholder { font-weight: normal; }
+input::-moz-placeholder { color: #1A7D7D; }
+input::-moz-placeholder { font-size: 16px; }
+input::-moz-placeholder { font-weight: normal; }
+
+
+
 
 
 @keyframes App-logo-spin {

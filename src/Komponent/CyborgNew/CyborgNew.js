@@ -17,15 +17,16 @@ const Cyborg = (props) => {
     return (
         <div className="margBot">
             <a>Cyborg model: {props.model}</a> <br/>
-            <a>Cyborg number: { props.number } </a> <br/>
-            <a>Cyborg art: { props.art } </a> <br/>
+            <a>Number: { props.number } </a> <br/>
+            <a>Cyborg version: { props.version } </a> <br/>
             <input 
                 type="text" 
-                onChange= {props.onChangeName} 
+                onChange= {props.onChangeModel} 
                 value={props.model}
                 className={inputClasses.join(" ")}
+               
             />
-            <button className="btnNew" onClick={ props.onDelete}>Del</button>
+            <button className="btnNew btnRound" onClick={ props.onDelete}>Del</button>
         </div> 
       
     )
