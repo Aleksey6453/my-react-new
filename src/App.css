@@ -18,7 +18,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 100px;
+  padding: 20px 10px;
 }
 
 .App-link {
@@ -79,11 +79,30 @@
    border: 3px solid lime;
    color: lime;
    background: black;
+   margin-bottom: 30px;
  }
 
  .flex {
    display: flex;
  }
+
+ .titleMy {
+  color: black;
+  font-size: 80px;
+  font-family:  ubuntu;
+  font-weight: bold;
+  transition: all 1s;
+  cursor: all-scroll;
+  
+}
+
+.titleMy:hover {
+  letter-spacing: 10px;
+}
+
+.bigTitle {
+  color: white;
+}
 
 
 @keyframes App-logo-spin {

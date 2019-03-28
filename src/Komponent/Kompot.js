@@ -9,11 +9,11 @@ import React from 'react'
  const Kompot = () => {
      return (
         <React.Fragment>
-            <h2 className="App-link">Pull yourself together</h2>
+            <h2 className="titleMy"><b className="bigTitle">T</b>ODO<b className="bigTitle">L</b>IST<b className="bigTitle">R</b>EACT</h2>
             {/* <p>{334 * 722}</p> */}
+            {/* <a>{Math.round(Math.random() * 100)}</a>
             <a>{Math.round(Math.random() * 100)}</a>
-            <a>{Math.round(Math.random() * 100)}</a>
-            <a>{Math.round(Math.random() * 100)}</a> <br/>
+            <a>{Math.round(Math.random() * 100)}</a> <br/> */}
       
         </React.Fragment>
      )

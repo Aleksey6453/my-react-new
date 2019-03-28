@@ -5,15 +5,18 @@ import Kompot from "./Komponent/Kompot";
 import Cyborg from "./NewMyCase/NewCase";
 
 
+
 class App extends Component {
 
   state = {
     Cyborgs : [
-      {model: "Optimus", number: 1313},
-      {model: "Galvatron", number: 1334},
-      {model: "Ronimus", number: 1387}
+      {model: "Optimus", number: 1313, version: "cyborg"},
+      {model: "Galvatron", number: 1334, version: "cyborg"},
+      {model: "Ronimus", number: 1387, version: "cyborg"},
+      {model: "mister Robot", number: 1342, version: "human"}
     ],
-    pageTitle: "All Cyborgs:"
+    pageTitle: "All Cyborgs:",
+    showCyborgs: false
   }
 
   changeContent = (newTitle) => {
@@ -32,10 +35,28 @@ class App extends Component {
     this.setState ({
       pageTitle : event.target.value
     })
+   }
+
+  showCyborgsButton = (event) => {
+     console.log("Work show!")
+     this.setState({
+       showCyborgs : !this.state.showCyborgs
+     })
   }
 
+  onChangeModel = (model, i) => {
+     console.log(123)
+  }
+
+  
 
   render() {
+    // const {
+    //   state: {pageTitle},
+    //   props: {},
+    //   showCyborgsButton,
+    // } = this;
+
     // const Cyborgs = this.state.Cyborgs;
 
     return (
@@ -47,7 +68,7 @@ class App extends Component {
           <Kompot />
           <h1>{this.state.pageTitle}</h1>
 
-          <input type="text" className="inputNew" onChange={this.changeImput}/>
+          {/* <input type="text" className="inputNew" onChange={this.changeImput}/> */}
 
           <div className="flex">
             <button className="btn" onClick={this.changeContent.bind(this, "You are button, fuck!")}>
@@ -58,45 +79,26 @@ class App extends Component {
             </button> 
           </div>
 
-          {this.state.Cyborgs.map((cyborg, i) => {
-            return (
-              <Cyborg
-                 key = {i}
-                 model = {cyborg.model}
-                 number = {cyborg.number}
-                 onChangeText= {() => {this.changeContent(cyborg.model)}}
-              />
-            ) 
-          })}
-          
-         
-          {/* <Cyborg 
-            model={Cyborgs[0].model} 
-            number={Cyborgs[0].number}
-            onChangeText={this.changeContent.bind(this, Cyborgs[0].model)}
-          /> <br/>
+          <button className="btn" onClick={this.showCyborgsButton}>
+            Show cyborgs (on/off)
+          </button>
 
-          <Cyborg 
-            model={Cyborgs[1].model} 
-            number={Cyborgs[1].number}
-            onChangeText= {() => this.changeContent(Cyborgs[1].model)}
-          /> <br/>
-
-          <Cyborg 
-            model={Cyborgs[2].model} 
-            number={Cyborgs[2].number}
-            onChangeText= {() => this.changeContent(Cyborgs[2].model)}
-          /> <br/>
-    */}
-          
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Рандомный болгарин созданный для теста :-)
-          </a>
+          { 
+            this.state.showCyborgs
+              ?  this.state.Cyborgs.map((cyborg, i) => {
+                  return (
+                    <Cyborg
+                      key = {i}
+                      model = {cyborg.model}
+                      number = {cyborg.number}
+                      version = {cyborg.version}
+                      onChangeModel = { event => {this.onChangeModel(event.target.value, i)}}
+                    />
+                  ) 
+                }) :
+                  null
+          }
+  
         </header>
         
       </div>
