@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  
+}
+
+/* .App-logo {
+  animation: App-logo-spin infinite 50s linear;
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+
+.titleMy {
+  color: black;
+  font-size: 80px;
+  font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+  transition: all 1s;
+  cursor: all-scroll;
+  
+}
+
+.titleMy:hover {
+  letter-spacing: 10px;
+}
+
+.bigTitle {
+  color: white;
+}
+
+.inputNewClass {
+  padding: 15px;
+  margin: 20px;
+  border: 3px solid black;
+  border-radius: 12px;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  background: #115050;
+  outline: 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: all .5s;
+}
+
+.inputNewClass:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background: #1A7D7D;
+  border: 3px solid black;
+}
+
+.btnNew {
+  background: #28BBB2;
+  border-radius: 12px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: all .5s;
+  outline: 0;
+  border: 3px solid black;
+}
+
+.btnNew:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background: #1A7D7D;
+  cursor: pointer;
+  
+  }
+
+.btnRound {
+  border-radius: 50%;
+}
+
+.flexRow {
+  display: flex;
+  justify-content: center;
+} 
+
+
+
+.formNew {
+   background: #115050;
+   /* padding: 10px 0px; */
+   height: 100%;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 60vw;
+}
+
+.margBot {
+  margin-bottom: 30px;
+}
+
+.inputBord {
+  border-radius: 7px;
+  padding: 5px;
+  outline: 0;
+}
+
+.inputBord.green {
+    border: 2px solid green;
+}
+
+.inputBord.red {
+    border: 2px solid red;
+}
+
+
+
+input::-webkit-input-placeholder { color: #1A7D7D; }
+input::-webkit-input-placeholder { font-size: 16px; }
+input::-webkit-input-placeholder { font-weight: normal; }
+input::-moz-placeholder { color: #1A7D7D; }
+input::-moz-placeholder { font-size: 16px; }
+input::-moz-placeholder { font-weight: normal; }
+
+
