@@ -90,7 +90,7 @@ class App extends Component {
                
               <TitleNew />
               <p>{this.state.pageTitle}</p> 
-              <button className="btnNew" onClick={this.toggleCyborgsHendler}>Toggle</button>
+              <button className="btnNew" onClick={this.toggleCyborgsHendler}>Togle</button>
 
               <div className="flexRow margBot">
                   {/* <InputNew /> */}
