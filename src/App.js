@@ -12,7 +12,7 @@ class App extends Component {
   state = {
     cyborgs : [
       {model: "Optimus", number: "1325", art: "a"},
-      {model: "Optimus2", number: "1326", art: "h"},
+      {model: "Optimus22", number: "1326", art: "h"},
       {model: "Optimus33", number: "1327", art: "z"}
     ],
 
