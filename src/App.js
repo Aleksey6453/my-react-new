@@ -20,18 +20,18 @@ class App extends Component {
     showCyborgs: false
   }
 
-  changeHandle = (newTitle) => {
-    this.setState({
-      pageTitle : newTitle
-    })
-  }
+  // changeHandle = (newTitle) => {
+  //   this.setState({
+  //     pageTitle : newTitle
+  //   })
+  // }
 
-  toggleCyborgsHendler = () => {
-    alert("TTTOOOGGLLEEE")
+
+  showCyborgsButton = (event) => {
     this.setState({
       showCyborgs : !this.state.showCyborgs
     })
-  }
+ }
 
   deleteHandler = (i) => {
     console.log("Del")
@@ -54,12 +54,7 @@ class App extends Component {
   //   })
   //  }
 
-  showCyborgsButton = (event) => {
-     console.log("Work show!")
-     this.setState({
-       showCyborgs : !this.state.showCyborgs
-     })
-  }
+ 
 
   onChangeModel = (model, i) => {
     const cyborg = this.state.cyborgs[i]
@@ -81,6 +76,22 @@ class App extends Component {
     // } = this;
 
     // const Cyborgs = this.state.Cyborgs;
+
+    let cyborgs = null
+
+    if (this.state.showCyborgs){
+      cyborgs = this.state.Cyborgs.map((cyborg, i) => {
+        return (
+          <CyborgNew
+            key = {i}
+            model = {cyborg.model}
+            number = {cyborg.number}
+            version = {cyborg.version}
+            onChangeModel = { event => {this.onChangeModel(event.target.value, i)}}
+          />
+        ) 
+      })
+    }
 
 
     return (
@@ -104,21 +115,9 @@ class App extends Component {
           <button className="btnNew" onClick={this.showCyborgsButton}>
             Show cyborgs (on/off)
           </button>
+  
 
-          { 
-            this.state.showCyborgs
-              ?  this.state.Cyborgs.map((cyborg, i) => {
-                  return (
-                    <CyborgNew
-                      key = {i}
-                      model = {cyborg.model}
-                      number = {cyborg.number}
-                      version = {cyborg.version}
-                      onChangeModel = { event => {this.onChangeModel(event.target.value, i)}}
-                    />
-                  ) 
-                }) : null
-          }
+          { cyborgs }
   
         </div>
         
