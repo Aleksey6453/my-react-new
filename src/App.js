@@ -20,18 +20,18 @@ class App extends Component {
     showCyborgs: false
   }
 
-  // changeHandle = (newTitle) => {
-  //   this.setState({
-  //     pageTitle : newTitle
-  //   })
-  // }
+  changeHandle = (newTitle) => {
+    this.setState({
+      pageTitle : newTitle
+    })
+  }
 
 
   showCyborgsButton = (event) => {
     this.setState({
       showCyborgs : !this.state.showCyborgs
     })
- }
+  }
 
   deleteHandler = (i) => {
     console.log("Del")
@@ -87,6 +87,7 @@ class App extends Component {
             model = {cyborg.model}
             number = {cyborg.number}
             version = {cyborg.version}
+            onDelete = { this.deleteHandler.bind(this, i)}
             onChangeModel = { event => {this.onChangeModel(event.target.value, i)}}
           />
         ) 
