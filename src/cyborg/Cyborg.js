@@ -25,7 +25,7 @@ const Cyborg = (props) => {
                 value={props.model}
                 className={inputClasses.join(" ")}
             />
-            <button className="btnNew" onClick={ props.onDelete}>Del</button>
+            <button className="btnNew btnRound" onClick={ props.onDelete}>DEl</button>
         </div> 
       
     )
