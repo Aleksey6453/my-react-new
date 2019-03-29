@@ -113,7 +113,7 @@ class App extends Component {
           </div> */}
 
           <button className="btnNew" onClick={this.showCyborgsButton}>
-            Show cyborgs (on/off)
+            Show Cyborgs (on/off)
           </button>
   
 
