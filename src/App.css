@@ -69,11 +69,13 @@
   font-weight: bold;
   transition: all 1s;
   cursor: all-scroll;
-  
+  min-height: 200px;
+  margin-bottom: 0;
 }
 
 .titleMy:hover {
   letter-spacing: 10px;
+  font-size: 120px;
 }
 
 .bigTitle {

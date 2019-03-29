@@ -35,7 +35,7 @@ class App extends Component {
 
   deleteHandler = (i) => {
     console.log("Del")
-    // this.setState({pageTitle:"DElEtEd"}) 
+    this.setState({pageTitle:"DElEtEd"}) 
     const cyborgs = this.state.cyborgs.concat()
     cyborgs.splice(i, 1)
 
@@ -57,7 +57,7 @@ class App extends Component {
  
 
   onChangeModel = (model, i) => {
-    const cyborg = this.state.cyborgs[i]
+    const cyborg = this.state.Cyborgs[i]
     cyborg.model = model
     const cyborgs = [...this.state.cyborgs]
     cyborgs[i] = cyborg 
