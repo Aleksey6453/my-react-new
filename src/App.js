@@ -4,6 +4,7 @@ import './App.css';
 // import ButtonNew from "./buttonFolder/ButtonMy";
 import TitleNew from "./titleFolder/TitleMy"
 import Cyborg from "./cyborg/Cyborg"
+import InputMy from "./inputFolder/InputMy.css"
 
 
 class App extends Component {

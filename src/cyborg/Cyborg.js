@@ -8,10 +8,10 @@ const Cyborg = (props) => {
 
     if (props.model !== " "){
         inputClasses.push("green")
-        console.log(13)
+        console.log("greeeeen")
     } else {
       inputClasses.push("red")
-      console.log(23)
+      console.log("reeeed")
     }
 
     return (
