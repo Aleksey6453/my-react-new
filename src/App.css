@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
   align-items: center;
-  font-size: calc(10px + 2vmin);
   color: white;
   
 }
@@ -40,7 +39,9 @@
 
 
 .btnNew {
-  background: #28BBB2;
+  background: #00DEEA;
+  
+  /* #28BBB2 */
   border-radius: 12px;
   color: black;
   font-size: 20px;
@@ -55,9 +56,9 @@
 
 .btnNew:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  background: #1A7D7D;
-  cursor: pointer;
+  background: #00FFA9;
   
+  cursor: pointer;
   }
 
 .btnRound {
@@ -83,11 +84,4 @@
 .margBot {
   margin-bottom: 30px;
 }
-
-
-
-
-
-
-
 

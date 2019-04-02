@@ -5,6 +5,10 @@ import './App.css';
 import TitleNew from "./titleFolder/TitleMy"
 import Cyborg from "./cyborg/Cyborg"
 import InputMy from "./inputFolder/InputMy.css"
+import TestList from "./testFolder/TestList"
+import TestForm from "./testFolder/TestForm"
+
+
 
 
 class App extends Component {
@@ -20,6 +24,10 @@ class App extends Component {
     pageTitle : "React Insane",
     showCyborgs : false
 
+  }
+
+  clickClack = (event) => {
+    alert("Click Clack")
   }
 
   changeHandle = (newTitle) => {
@@ -90,9 +98,9 @@ class App extends Component {
             <form action="#" >
                
               <TitleNew />
-              <p>{this.state.pageTitle}</p> 
+              {/* <p>{this.state.pageTitle}</p>  */}
               <button className="btnNew" onClick={this.toggleCyborgsHendler}>Show on/off</button>
-
+              
               <div className="flexRow margBot">
                   {/* <InputNew /> */}
                   {/* <input type="text"  onChange={this.handleInput} className="inputNewClass" name="text" placeholder="add text please..."/> */}
@@ -101,6 +109,10 @@ class App extends Component {
               </div>
 
               { cyborgs }
+              
+              <TestList />
+
+              
               
 
             </form>
