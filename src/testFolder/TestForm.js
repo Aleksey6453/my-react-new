@@ -10,15 +10,21 @@ export default class TestForm extends React.Component {
             [event.target.name] : event.target.value
         })
     }
-    
+    testSubmit = (event) => {
+       event.preventDefault();
+    }
     render() {
         return (
-            <input 
-            className="inputNewClass"
-            name="text"
-            value={this.state.text}
-            onChange={this.hendleTestForm}
-            placeholder="todos..."/>
+            <form onSubmit={this.testSubmit}>
+                <input 
+                className="inputNewClass"
+                name="text"
+                value={this.state.text}
+                onChange={this.hendleTestForm}
+                placeholder="todos..."
+                />
+            </form>
+            
         )
             
     }
