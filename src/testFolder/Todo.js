@@ -2,8 +2,14 @@ import React from "react"
 
 const Todo = (props) => {
     return (
-        <div className="margBot" onClick={props.toggleComplete}>
-            {props.text}
+        <div 
+            style={{
+                textDecoration: "line-through"
+            }} 
+            className="margBot" 
+            onClick={props.toggleComplete}
+        >
+            {props.todo.text}
         </div>
     )
    
