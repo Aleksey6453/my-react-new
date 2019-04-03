@@ -6,10 +6,16 @@ export default class TestList extends React.Component {
         todos: []
     }
 
+    addTodo = (todo) => {
+      this.setState({
+          todos: [todo, ...this.state.todos]
+      })
+    }
+
     render() {
         return (
             <div>
-                <TestForm />
+                <TestForm onSubmit={this.addTodo} />
             </div>
         )
     }

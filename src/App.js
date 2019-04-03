@@ -99,9 +99,9 @@ class App extends Component {
                
               <TitleNew />
               {/* <p>{this.state.pageTitle}</p>  */}
-              <button className="btnNew" onClick={this.toggleCyborgsHendler}>Show on/off</button>
+              {/* <button className="btnNew" onClick={this.toggleCyborgsHendler}>Show on/off</button> */}
               
-              <div className="flexRow margBot">
+              <div className="flexRow">
                   {/* <InputNew /> */}
                   {/* <input type="text"  onChange={this.handleInput} className="inputNewClass" name="text" placeholder="add text please..."/> */}
                   {/* <ButtonNew /> */}

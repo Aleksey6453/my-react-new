@@ -12,6 +12,7 @@ export default class TestForm extends React.Component {
     }
     testSubmit = (event) => {
        event.preventDefault();
+       this.props.onSubmit();
     }
     render() {
         return (
