@@ -5,8 +5,8 @@ import './App.css';
 import TitleNew from "./titleFolder/TitleMy"
 import Cyborg from "./cyborg/Cyborg"
 import InputMy from "./inputFolder/InputMy.css"
-import TestList from "./testFolder/TestList"
-import TestForm from "./testFolder/TestForm"
+import TodoList from "./testFolder/TodoList"
+import TodoForm from "./testFolder/TodoForm"
 
 
 
@@ -114,7 +114,7 @@ class App extends Component {
 
               { cyborgs }
               
-              <TestList />
+              <TodoList />
 
               
               
