@@ -52,6 +52,10 @@ class App extends Component {
     this.setState({cyborgs})
   }
 
+  newNewZ = () => {
+    alert("ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ")
+  }
+
   // handleInput = (event) => {
   //   this.setState({
   //     pageTitle : event.target.value

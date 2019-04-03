@@ -16,6 +16,7 @@ export default class TestList extends React.Component {
         return (
             <div>
                 <TestForm onSubmit={this.addTodo} />
+                {this.state.todos.map((todo, i) => <div key={i} className="margBot">{todo.text}</div>)}
             </div>
         )
     }

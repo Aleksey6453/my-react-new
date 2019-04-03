@@ -5,14 +5,21 @@ export default class TestForm extends React.Component {
       text: ""
     };
 
-    hendleTestForm = (event) => {
+    handleTestForm = (event) => {
         this.setState({
             [event.target.name] : event.target.value
         })
     }
     testSubmit = (event) => {
        event.preventDefault();
-       this.props.onSubmit();
+       this.props.onSubmit({
+          
+           text: this.state.text,
+           complete: false
+       });
+       this.setState({
+           text: ""
+       })
     }
     render() {
         return (
@@ -21,9 +28,10 @@ export default class TestForm extends React.Component {
                 className="inputNewClass"
                 name="text"
                 value={this.state.text}
-                onChange={this.hendleTestForm}
+                onChange={this.handleTestForm}
                 placeholder="todos..."
                 />
+                <button className="btnNew" onClick={this.testSubmit}>Add todo</button>
             </form>
             
         )
