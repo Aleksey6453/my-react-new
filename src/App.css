@@ -84,4 +84,53 @@
   margin-bottom: 30px;
 }
 
+.inputBord {
+  border-radius: 7px;
+  padding: 5px;
+  outline: 0;
+}
+
+.inputBord:active {
+    outline: 0;
+}
+
+.inputBord:focus {
+  outline: 0;
+}
+
+.inputBord.green {
+    border: 2px solid green;
+}
+
+.inputBord.red {
+    border: 2px solid red;
+}
+
+.inputNewClass {
+  padding: 10px 15px;
+  margin: 20px;
+  border: 3px solid black;
+  border-radius: 12px;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  background: #115050;
+  outline: 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: all .5s;
+}
+
+.inputNewClass:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background: white;
+  border: 3px solid black;
+}
+
+input::-webkit-input-placeholder { color: #1A7D7D; }
+input::-webkit-input-placeholder { font-size: 16px; }
+input::-webkit-input-placeholder { font-weight: normal; }
+input::-moz-placeholder { color: #1A7D7D; }
+input::-moz-placeholder { font-size: 16px; }
+input::-moz-placeholder { font-weight: normal; }
+
 
