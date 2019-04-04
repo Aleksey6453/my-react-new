@@ -11,7 +11,7 @@ export default class TodoList extends React.Component {
       this.setState({
           todos: [todo, ...this.state.todos]
       })
-    }
+    };
 
     toggleComplete = (id) => {
         this.setState({
