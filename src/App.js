@@ -7,6 +7,7 @@ import Cyborg from "./cyborg/Cyborg"
 import InputMy from "./inputFolder/InputMy.css"
 import TodoList from "./testFolder/TodoList"
 import TodoForm from "./testFolder/TodoForm"
+import NEW from "./newFolder/TodoNewL"
 
 
 
@@ -115,6 +116,7 @@ class App extends Component {
               { cyborgs }
               
               <TodoList />
+              <NEW />
 
               
               
