@@ -10,8 +10,6 @@ import TodoForm from "./testFolder/TodoForm"
 import NEW from "./newFolder/TodoNewL"
 
 
-
-
 class App extends Component {
  
  
