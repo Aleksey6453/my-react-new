@@ -16,14 +16,14 @@ class App extends Component {
  
  
   state = {
-    cyborgs : [
-      {model: "Optimus", number: "1325", art: "a"},
-      {model: "Optimus22", number: "1326", art: "h"},
-      {model: "Optimus33", number: "1327", art: "z"}
-    ],
+    // cyborgs : [
+    //   {model: "Optimus", number: "1325", art: "a"},
+    //   {model: "Optimus22", number: "1326", art: "h"},
+    //   {model: "Optimus33", number: "1327", art: "z"}
+    // ],
 
-    pageTitle : "React Insane",
-    showCyborgs : false
+    // pageTitle : "React Insane",
+    // showCyborgs : false
 
   }
 
