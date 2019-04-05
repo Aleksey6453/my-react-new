@@ -60,12 +60,23 @@ class App extends Component {
             <TodoComponent />
          
             <div className="flexRow">
-                <input type="text" placeholder="enter todo..." onChange={this.changeInput} value={this.state.curent_todo} className="inputNewClass"/>
-                <button className="btnNew" onClick={this.putTodo}>Add todo</button>
+                <input 
+                  type="text"
+                  placeholder="enter todo..." 
+                  onChange={this.changeInput} 
+                  value={this.state.curent_todo} 
+                  className="inputNewClass"
+                />
+                <button 
+                  className="btnNew" 
+                  onClick={this.putTodo}>
+                    Add todo
+                </button>
             </div> 
          
           
-      {this.state.todos.length === 0 ? " " : <ul className="listStyleTypeNone">{x}</ul> } 
+      {this.state.todos.length === 0 ? " " : 
+      <ul className="listStyleTypeNone">{x}</ul> } 
          
             
            
