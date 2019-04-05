@@ -25,7 +25,7 @@
   font-weight: bold;
   transition: all 1s;
   cursor: all-scroll;
-  
+  margin-top: 30px;
 }
 
 .titleMy:hover {
@@ -83,6 +83,7 @@
 
 .margBot {
   margin-bottom: 30px;
+
 }
 
 .inputBord {
