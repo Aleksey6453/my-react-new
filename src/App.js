@@ -33,10 +33,13 @@ class App extends Component {
 
   let x = this.state.todos.map((event, index) => {
     return (
-      <li key={index}>
+      <li key={index} className="flexRow">
          <h1>   
             {event} 
         </h1> 
+        <button className="btnNew btnRound">
+          Del
+        </button>
       </li>
     )
   } )
