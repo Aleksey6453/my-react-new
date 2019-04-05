@@ -13,6 +13,15 @@ class App extends Component {
     curent_todo: ""
   }
 
+  delTodo = (index) => {
+    let d =  this.state.todos.slice();
+    d.splice(index, 1);
+    this.setState({
+      todos: d,
+      curent_todo: ""
+    });
+  }
+
   changeInput = (event) => {
     this.setState({
       curent_todo: event.target.value
@@ -37,7 +46,7 @@ class App extends Component {
          <h1>   
             {event} 
         </h1> 
-        <button className="btnNew btnRound">
+        <button className="btnNew btnRound" onClick={this.delTodo}>
           Del
         </button>
       </li>
