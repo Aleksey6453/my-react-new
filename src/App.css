@@ -26,6 +26,7 @@
   transition: all 1s;
   cursor: all-scroll;
   margin-top: 30px;
+  text-transform: uppercase;
 }
 
 .titleMy:hover {

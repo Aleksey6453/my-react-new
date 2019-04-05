@@ -10,7 +10,21 @@ class App extends Component {
 
   state={
     todos: [],
-    curent_todo: ""
+    curent_todo: "",
+    title: "TodoListReact",
+    count: 0
+  }
+
+  countClick = () => {
+    this.setState({
+      count: this.state.count + 1
+    })
+  }
+
+  delTitle = () => {
+    this.setState({
+      title: " "
+    })
   }
 
   delTodo = (index) => {
@@ -57,6 +71,8 @@ class App extends Component {
       <div className="App">
         <div className="formNew">
 
+           <h1 className="titleMy">{this.state.title}</h1>
+
             <TodoComponent />
          
             <div className="flexRow">
@@ -78,8 +94,8 @@ class App extends Component {
       {this.state.todos.length === 0 ? " " : 
       <ul className="listStyleTypeNone">{x}</ul> } 
          
-            
-           
+         <button className="btnNew" onClick={this.delTitle}>Test</button>   
+        <button onClick={this.countClick} className="btnNew">{this.state.count}</button>   
         </div>
         
          
