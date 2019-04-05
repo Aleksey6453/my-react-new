@@ -72,6 +72,7 @@
 .formNew {
    background: #115050;
    /* padding: 10px 0px; */
+   flex-flow: column;
    height: 100%;
    min-height: 100vh;
    display: flex;
@@ -124,6 +125,10 @@
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   background: white;
   border: 3px solid black;
+}
+
+.listStyleTypeNone {
+  list-style-type: none;
 }
 
 input::-webkit-input-placeholder { color: #1A7D7D; }

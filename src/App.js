@@ -30,6 +30,16 @@ class App extends Component {
 
  
  render() {
+
+  let x = this.state.todos.map((event, index) => {
+    return (
+      <li key={index}>
+         <h1>   
+            {event} 
+        </h1> 
+      </li>
+    )
+  } )
     return (
       
       <div className="App">
@@ -40,11 +50,13 @@ class App extends Component {
                 <button className="btnNew" onClick={this.putTodo}>Add todo</button>
             </div> 
           </div>
-          <br />
-          {/* { this.state.todos.length === 0 ? <h1>No todos!</h1> : <h1>You have todos!</h1> } */}
-               
+          
+      {this.state.todos.length === 0 ? <h1>No todos!</h1> : <ul className="listStyleTypeNone">{x}</ul> } 
+         
+            
            
         </div>
+        
          
         
       </div>
