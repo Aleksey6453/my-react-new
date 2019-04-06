@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import TodoComponent from "./TestComponent"
+import TodoTitle from "./TodoTitle"
+import TodoInput from "./TodoInput"
 
 
 
@@ -11,7 +12,7 @@ class App extends Component {
   state={
     todos: [],
     curent_todo: "",
-    title: "TodoListReact",
+    title: <TodoTitle />,
     count: 0
   }
 
@@ -73,7 +74,7 @@ class App extends Component {
 
            <h1 className="titleMy">{this.state.title}</h1>
 
-            <TodoComponent />
+            {/* <TodoTitle /> */}
          
             <div className="flexRow">
                 <input 
@@ -83,6 +84,7 @@ class App extends Component {
                   value={this.state.curent_todo} 
                   className="inputNewClass"
                 />
+                {/* <TodoInput /> */}
                 <button 
                   className="btnNew" 
                   onClick={this.putTodo}>
@@ -94,7 +96,7 @@ class App extends Component {
       {this.state.todos.length === 0 ? " " : 
       <ul className="listStyleTypeNone">{x}</ul> } 
          
-         <button className="btnNew" onClick={this.delTitle}>Test</button>   
+         <button className="btnNew" onClick={this.delTitle}>DelTitle</button>   
         <button onClick={this.countClick} className="btnNew">{this.state.count}</button>   
         </div>
         
